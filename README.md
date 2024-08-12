@@ -17,5 +17,10 @@ forge install smartcontractkit/chainlink-brownie-contracts@0.6.1 --no-commit
 ```
 ## Deploy
 ```
-forge script script/DeployFundMe.s.sol
+forge script script/DeployFundMe.s.sol --rpc-url ${RPC_URL} --broadcast --private-key ${PRIVATE_KEY}
 ```
+## Run All Tests
+```
+forge test -vvvv
+```
+
